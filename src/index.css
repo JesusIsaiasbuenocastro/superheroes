@@ -1,0 +1,169 @@
+html{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  min-height: 100vh; 
+  width: 100% ;
+
+}
+
+body {
+  margin: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cards-format{
+  width: 18rem;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 30px;
+  box-shadow: 7px 7px 15px PowderBlue;
+}
+
+.cards-container {
+  width: 100%;
+  margin: 100px;
+  text-align: center;
+}
+
+.btn-container{
+  /*inicio centrar*/
+  max-width:100%;
+  text-align: center;
+  justify-content:center;
+  display: flex;
+  /*fin centrar*/
+  margin-bottom: 5rem;
+ 
+  ;
+}
+
+.div-centrar-encabezado {
+  text-align: center;
+  justify-content:center;
+  display: flex;
+  max-width:100%;
+  
+}
+
+.img-encabezado {
+  height: 150px;
+  
+}
+.img-encabezado-texto {
+  margin-top: 30px;
+  font-family: 'Akshar', sans-serif;
+  font-size: 5rem;
+}
+.img-encabezado-texto2 {
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  
+}
+
+.btn-format{
+  width: 10rem;
+  height: 4rem;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.lbl-div-busqueda{
+  font-size: 2rem;
+}
+
+.txt-busqueda{
+  height: 4rem;
+  box-shadow: 7px 7px 15px PowderBlue;
+  border-radius: 30px;
+  font-size: 1.5rem;
+}
+
+.mensajes-format{
+  font-family: 'Akshar', sans-serif;
+  font-size: 3rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+/*Spinner*/
+.Spinner {
+  text-align: center;
+}
+
+.Spinner-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .Spinner-logo{
+    animation: Spinner-logo-spin infinite 5s linear;
+  }
+}
+@keyframes Spinner-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.fadeIn{
+  animation: fadeIn ease 3s;
+
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.align-right{
+  text-align: right;
+  margin-right: 3rem;
+  margin-top: 3rem;
+}
+
+.div-panel{
+  text-align: center;
+  justify-content:center;
+  max-width:100%;
+  border-radius: 30px;
+  margin-top: 3rem;
+  padding: 3rem;
+  box-shadow: 7px 7px 15px PowderBlue;
+  margin-bottom: 10rem;
+  
+}
+.div-text-center{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.img-size{
+    height: 300px;
+    margin-bottom: 3rem;
+}
+
+
+.div-margin-top{
+  margin-top: 4rem;
+}
