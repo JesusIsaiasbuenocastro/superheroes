@@ -19,24 +19,15 @@ const Heroes = () => {
     const [isCargando, setIsCargando] = useState(false);
     const [isHabilitado, setIsHabilitado] = useState(true);
 
-
-    
-      useEffect( () => {  
-        console.log('Entro al useefect 1')
-        if(localStorage.getItem('numPaginacion')){
-        
-        }
-      },[])
   
       useEffect(() => {
-        console.log('Entro al useefect 2')
           const obtenerHeroes = async () => {
             
             try {
 
               
               let url = `https://gateway.marvel.com:443/v1/public/characters?ts=1653004613&apikey=5692174247ed387c8fb8b4b91816b1a5&hash=c92601c0ce3ab27cfc56d402b0e79f3f&limit=50&offset=${localStorage.getItem('numPaginacion') ? localStorage.getItem('numPaginacion') : paginacion}`
-                console.log(localStorage.getItem('nombreHeroe'));
+               
                 if(localStorage.getItem('nombreHeroe') ){
                   
                   url =   localStorage.getItem('nombreHeroe') === '' ?  url : `https://gateway.marvel.com:443/v1/public/characters?ts=1653004613&apikey=5692174247ed387c8fb8b4b91816b1a5&hash=c92601c0ce3ab27cfc56d402b0e79f3f&limit=50&offset=${localStorage.getItem('numPaginacion') ? localStorage.getItem('numPaginacion') : paginacion}&nameStartsWith=${localStorage.getItem('nombreHeroe') ? localStorage.getItem('nombreHeroe') : busquedaHeroe.nombre.trim()}`;
@@ -46,8 +37,6 @@ const Heroes = () => {
                   }
 
                 }
-                console.log(url);
-  
                 const { data } = await axios(url)
   
                 setSuperHeroes(data.data.results)
